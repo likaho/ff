@@ -1,0 +1,17 @@
+{
+  "deployedContracts": [],
+  "accounts": [
+    {
+      "address": "0x89bfeedc771138b3195fe4f11278f75af61920be",
+      "privateKey": "092c449b63e66ed70b6e3ad5c37687e6eb0ff30a607f0b2a057d13b1c7aaf7cd"
+    },
+    {
+      "address": "0xa4787c8093a884d8f43dc0e23346cab2bd6dea9e",
+      "privateKey": "b8f42262311ea686954b48c93637ed90f278cb3caef42284302f6ae19c71c453"
+    },
+    {
+      "address": "0xe8c648434cb86bb062bcf83c69b5b0e26e6e9a8f",
+      "privateKey": "b3f8d4b1678aa3959b914c8c4a883753fb1e452c7430fdcb09e3445649778d12"
+    }
+  ]
+}

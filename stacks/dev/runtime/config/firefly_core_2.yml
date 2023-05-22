@@ -1,0 +1,81 @@
+admin:
+  address: 0.0.0.0
+  enabled: true
+  port: 5301
+  publicURL: http://127.0.0.1:5301
+debug:
+  port: 6060
+event:
+  dbevents:
+    bufferSize: 10000
+http:
+  address: 0.0.0.0
+  port: 5002
+  publicURL: http://127.0.0.1:5002
+log:
+  level: debug
+metrics: {}
+namespaces:
+  default: default
+  predefined:
+  - defaultKey: 0xe8c648434cb86bb062bcf83c69b5b0e26e6e9a8f
+    description: Default predefined namespace
+    multiparty:
+      contract:
+      - firstEvent: "0"
+        location:
+          address: 0xeec5cc36e6f9062c220341308330b8637997604b
+        options: {}
+      enabled: true
+      node:
+        name: node_b008f9
+      org:
+        key: 0xe8c648434cb86bb062bcf83c69b5b0e26e6e9a8f
+        name: org_b008f9
+    name: default
+    plugins:
+    - database0
+    - blockchain0
+    - dataexchange0
+    - sharedstorage0
+    - erc20_erc721
+plugins:
+  blockchain:
+  - ethereum:
+      ethconnect:
+        topic: "2"
+        url: http://evmconnect_2:5008
+    name: blockchain0
+    type: ethereum
+  database:
+  - name: database0
+    sqlite3:
+      migrations:
+        auto: true
+      url: /etc/firefly/db/sqlite.db?_busy_timeout=5000
+    type: sqlite3
+  dataexchange:
+  - ffdx:
+      url: http://dataexchange_2:3000
+    name: dataexchange0
+    type: ffdx
+  sharedstorage:
+  - ipfs:
+      api:
+        url: http://ipfs_2:5001
+      gateway:
+        url: http://ipfs_2:8080
+    name: sharedstorage0
+    type: ipfs
+  tokens:
+  - fftokens:
+      url: http://tokens_2_0:3000
+    name: erc20_erc721
+    type: fftokens
+spi:
+  address: 0.0.0.0
+  enabled: true
+  port: 5301
+  publicURL: http://127.0.0.1:5301
+ui:
+  path: ./frontend
