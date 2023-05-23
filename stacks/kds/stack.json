@@ -1,0 +1,108 @@
+{
+ "name": "kds",
+ "members": [
+  {
+   "id": "0",
+   "index": 0,
+   "account": {
+    "address": "0x1919bae074334857f5de55af38ee3e84f3e98d1c",
+    "privateKey": "74a562b2ac9d83fe163fe5f8c9a9fb76287743dfaa870cd7f15984708cdfddee"
+   },
+   "exposedFireflyPort": 5000,
+   "exposedFireflyAdminPort": 5101,
+   "exposedConnectorPort": 5102,
+   "exposedPostgresPort": 5104,
+   "exposedDataexchangePort": 10205,
+   "exposedIPFSApiPort": 10206,
+   "exposedIPFSGWPort": 10207,
+   "exposedUiPort": 5103,
+   "exposedSandboxPort": 5109,
+   "exposedTokensPorts": [
+    5108
+   ],
+   "orgName": "org_7d0005",
+   "nodeName": "node_7d0005",
+   "namespaces": null
+  },
+  {
+   "id": "1",
+   "index": 1,
+   "account": {
+    "address": "0xa835d8e9da4838301580ffb3c4003042d900e03f",
+    "privateKey": "e077c7395bcc2d8b9f26db205c8e329c5ea1d8746cac1e2248114545145971e6"
+   },
+   "exposedFireflyPort": 5001,
+   "exposedFireflyAdminPort": 5201,
+   "exposedConnectorPort": 5202,
+   "exposedPostgresPort": 5204,
+   "exposedDataexchangePort": 10405,
+   "exposedIPFSApiPort": 10406,
+   "exposedIPFSGWPort": 10407,
+   "exposedUiPort": 5203,
+   "exposedSandboxPort": 5209,
+   "exposedTokensPorts": [
+    5208
+   ],
+   "orgName": "org_12f6a7",
+   "nodeName": "node_12f6a7",
+   "namespaces": null
+  }
+ ],
+ "swarmKey": "/key/swarm/psk/1.0.0/\n/base16/\n26c02440bf5dba11f1c8ca04a2f60939fe4a1df68710adbddedf25d5e8302679",
+ "exposedBlockchainPort": 5100,
+ "database": "postgres",
+ "blockchainProvider": "ethereum",
+ "blockchainConnector": "evmconnect",
+ "blockchainNodeProvider": "geth",
+ "tokenProviders": [
+  "erc20_erc721"
+ ],
+ "versionManifest": {
+  "firefly": {
+   "image": "ghcr.io/hyperledger/firefly",
+   "tag": "latest",
+   "sha": "8f689451c8bca9c990e5e72e1fae9c82d73c22b50e3318f783bf04f85e571e50"
+  },
+  "ethconnect": {
+   "image": "ghcr.io/hyperledger/firefly-ethconnect",
+   "tag": "v3.2.9",
+   "sha": "a9aed053d57d56532084e8d0229d3a6e8843054006cd82bb48c4800dcccc6449"
+  },
+  "evmconnect": {
+   "image": "ghcr.io/hyperledger/firefly-evmconnect",
+   "tag": "v1.2.2",
+   "sha": "9032e45ea9cee7d881ce88eaea720f450d2ed176e96137feb495c5e7850fab45"
+  },
+  "fabconnect": {
+   "image": "ghcr.io/hyperledger/firefly-fabconnect",
+   "tag": "v0.9.17",
+   "sha": "7d4aa158f9dff31f200ae7a04f68665f32930f7739156b25a0da80e5353f3245"
+  },
+  "dataexchange-https": {
+   "image": "ghcr.io/hyperledger/firefly-dataexchange-https",
+   "tag": "v1.2.0",
+   "sha": "4ac765f7a07b9d17ab5648b3c789875791db364659c975a23626ec5921f11ce4"
+  },
+  "tokens-erc1155": {
+   "image": "ghcr.io/hyperledger/firefly-tokens-erc1155",
+   "tag": "v1.2.1",
+   "sha": "c9c4cf768e336ab73f5b8ab5c2872bf4cd1216b5c0de9a1bee811c8aeaf91a43"
+  },
+  "tokens-erc20-erc721": {
+   "image": "ghcr.io/hyperledger/firefly-tokens-erc20-erc721",
+   "tag": "v1.2.1",
+   "sha": "401d4fbe3fcf26e63bdfc889d6eac46fde346d90ed091da558ac5fcb97d243c8"
+  },
+  "signer": {
+   "image": "ghcr.io/hyperledger/firefly-signer",
+   "tag": "v1.1.5",
+   "sha": "4ee8549d12339f6d4224a277faf143da1749a51a5994e074224c95e3cce64670"
+  }
+ },
+ "sandboxEnabled": true,
+ "multiparty": true,
+ "chainID": 2021,
+ "ipfsMode": "private",
+ "channelName": "firefly",
+ "chaincodeName": "firefly"
+}
